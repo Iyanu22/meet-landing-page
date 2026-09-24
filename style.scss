@@ -1,0 +1,309 @@
+//colors
+$color-slate-600: #87879D;
+$color-slate-900: #28283D;
+$color-slate-300: #D1D1DF;
+$color-cyan-600: #4D96A9;
+$color-white: #FAFAFA;
+$color-cyan-300: #8FE3F9;
+$color-purple-600: #855FB1;
+$color-stroke: #979797;
+
+//desktop breakpoint
+$breakpoint-tablet: 48rem;
+$breakpoint-desktop: 90rem;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-top: 3rem;
+    font-family: "Red Hat Display", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 19.4375rem;
+    margin: 0 auto;
+
+    .logo{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "first second"
+                         "chat chat";
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+.image-hero-left{grid-area: first;}
+.image-hero-right{grid-area: second;}
+    
+img{
+    width: 100%;
+    height: 100%;
+}
+.group-chat{
+    grid-area: chat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 19.4375rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+   
+
+    h1{
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+        color: $color-slate-900;
+
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        color: $color-slate-600;
+    }
+    .button-group{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+     
+.download{
+     background-color: $color-cyan-600;
+
+        span{
+            color: $color-cyan-300;
+        }
+     }
+ .download, .question{
+        padding: 1rem 2.5rem;
+        border-radius: 29px;
+        color: $color-white;
+        font-size: 1rem;
+        font-weight: 900;
+        border: 0;
+        line-height: 1.5;
+     }
+     .question{
+        background-color: $color-purple-600;
+        border: 1px solid $color-stroke;
+     }    
+
+    
+     
+
+}
+}
+.section-one, footer{
+     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-one{
+   
+    gap: 4rem;
+
+.image-collection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+   max-width: 20rem;
+
+   img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   border-radius: 10px;
+
+   }
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    line-height: 1.1;
+    color: $color-cyan-600;
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.features-subheading{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: $color-slate-900;
+    margin-bottom: 2rem;
+
+}
+.features-body{
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-slate-600;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+}
+.number{
+    display: flex;              
+    align-items: center;        
+    justify-content: center; 
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-slate-600;
+    border-radius: 50%;
+    border: 1px solid $color-slate-600;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: $color-white;
+}
+.number-one{
+    margin-top: 4rem;
+    position: relative;
+}
+.number-one::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 3rem;
+    bottom: 100%;
+    left: 50%;
+    background-color: $color-slate-600;
+    transform: translateX(-50%); 
+}
+}
+footer{
+    position: relative;
+    background-image:  linear-gradient(rgba(77, 150, 169, 0.85), rgba(77, 150, 169, 0.85)),
+                        url("./starter-code/assets/mobile/image-footer.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-white;
+    text-align: center;  
+    width: 100vw; 
+    left: 50%; 
+    margin-left: -50vw;
+
+    .footer-header{
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        max-width: 19.4375rem;
+    }
+    .footer-paragraph{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        text-align: center;
+        max-width: 19.4375rem;
+    }   
+    
+    .footer-download{
+        margin-bottom: 8rem;
+        padding: 1rem 2.5rem;
+        border-radius: 29px;
+        color: $color-white;
+        font-size: 1rem;
+        font-weight: 900;
+        border: 0;
+        line-height: 1.5;
+        background-color: $color-purple-600;
+
+        span{
+            color: $color-slate-600;
+        }
+    }
+}
+.container .number-one--footer{
+        margin-top: 0;
+        position: absolute;
+        top: -1.75rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+@media(min-width: $breakpoint-tablet){
+    .container{
+        max-width: 42.5rem;
+        margin: 0 auto;
+
+        .hero-section{
+        .group-chat{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 4.5rem;
+            max-width: 42.5rem;
+
+        h1{
+            font-size: 3rem;
+        }
+        .button-group{
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            
+        }
+        }
+    }
+    .section-one{
+        .features-heading{
+            font-size: 0.875rem;
+        }
+        .features-subheading{
+            font-size: 2.25rem;
+        }
+    }
+    footer{
+         .footer-header{
+            font-size: 2.25rem;
+            max-width: 31.5rem;
+        }
+        .footer-paragraph{
+            max-width: 31.5rem;
+        }
+    }
+
+}
+.container .section-one .image-collection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+   max-width: 42.5rem;
+
+      img{
+        flex:1; // forces equal width, allows shrinking
+        min-width: 0; //overrides the default min-width: auto that blocks shrinking
+
+   }
+    }
+       
+
+}
+@media(min-width: $breakpoint-tablet){
+    
+}
