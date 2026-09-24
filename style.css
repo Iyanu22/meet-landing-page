@@ -5,7 +5,6 @@
 }
 
 body {
-  padding-top: 3rem;
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -17,7 +16,8 @@ body {
 }
 .container .logo {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 5rem 5rem 0 5rem;
+  margin-bottom: 4rem;
 }
 .container .hero-section {
   display: grid;
@@ -244,6 +244,9 @@ footer .footer-download span {
   .container .section-one .features-subheading {
     font-size: 2.25rem;
   }
+  .container footer {
+    background-image: linear-gradient(rgba(77, 150, 169, 0.85), rgba(77, 150, 169, 0.85)), url("./starter-code/assets/tablet/image-footer.jpg");
+  }
   .container footer .footer-header {
     font-size: 2.25rem;
     max-width: 31.5rem;
@@ -262,6 +265,88 @@ footer .footer-download span {
   .container .section-one .image-collection img {
     flex: 1;
     min-width: 0;
+  }
+}
+@media (min-width: 90rem) {
+  .container {
+    max-width: 90rem;
+  }
+  .container .hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.5rem;
+    max-width: 93.75rem;
+    width: auto;
+  }
+  .container .hero-section .image-hero-left, .container .hero-section .image-hero-right {
+    flex: 0 0 auto;
+    max-width: 24.625rem;
+  }
+  .container .hero-section .image-hero-left img, .container .hero-section .image-hero-right img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+  .container .hero-section .group-chat {
+    max-width: 27.8125rem;
+  }
+  .container .hero-section .group-chat h1 {
+    font-size: 4rem;
+  }
+  .container .hero-section .group-chat p {
+    font-size: 1.125rem;
+  }
+  .container .section-one .image-collection {
+    max-width: 70rem;
+  }
+  .container .section-one .image-collection img {
+    max-width: 70rem;
+  }
+  .container .section-one .features {
+    max-width: 34rem;
+  }
+  .container .section-one .features .features-heading {
+    font-size: 1rem;
+  }
+  .container .section-one .features .features-subheading {
+    font-size: 2.5rem;
+  }
+  .container .section-one .features .features-heading, .container .section-one .features .features-subheading {
+    max-width: 27.8125rem;
+  }
+  .container .section-one .features .features-body {
+    font-size: 1.125rem;
+  }
+  footer {
+    background-image: linear-gradient(rgba(77, 150, 169, 0.85), rgba(77, 150, 169, 0.85)), url("./starter-code/assets/desktop/image-footer.jpg");
+    padding: 4rem 0;
+  }
+  footer .footer-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  footer .footer-header {
+    max-width: 27.8125rem;
+    text-align: left;
+    margin: 0;
+  }
+  footer .footer-paragraph {
+    max-width: 22.1875rem;
+    text-align: left;
+    margin: 0;
+  }
+  footer .footer-download {
+    align-self: center;
+    flex-shrink: 0;
+    margin-bottom: 0;
   }
 }
 
