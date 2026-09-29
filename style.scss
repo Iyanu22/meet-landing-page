@@ -19,7 +19,6 @@ $breakpoint-desktop: 90rem;
     margin: 0;
 }
 body{
-    // padding-top: 3rem;
     font-family: "Red Hat Display", sans-serif;
 }
 .container{
@@ -325,8 +324,8 @@ footer{
    max-width: 42.5rem;
 
       img{
-        flex:1; // forces equal width, allows shrinking
-        min-width: 0; //overrides the default min-width: auto that blocks shrinking
+        flex:1;
+        min-width: 0;
 
    }
     }
@@ -349,8 +348,7 @@ footer{
         .image-hero-left, .image-hero-right{
             flex: 0 0 auto;
             max-width:  24.625rem;
-            // z-index: 2;
-
+         
         img{
             width: 100%;
             height: auto;
@@ -402,11 +400,11 @@ footer{
     .footer-inline{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;  //
+        justify-content: space-between;  
         align-items: center;
         gap: 2rem;
         max-width: 70rem; 
-        margin: 0 auto; //
+        margin: 0 auto; 
     }
     .footer-header{
         max-width: 27.8125rem;
