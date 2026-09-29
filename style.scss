@@ -91,6 +91,10 @@ img{
      background-color: $color-cyan-dark;
      cursor: pointer;
 }
+&:focus-visible {
+  outline: 2px solid $color-cyan-dark;
+  outline-offset: 3px;
+}
         span{
             color: $color-cyan-300;
         }
@@ -111,6 +115,10 @@ img{
     &:hover{
      background-color: $color-purple-dark;
      cursor: pointer;
+}
+&:focus-visible {
+  outline: 2px solid $color-purple-dark;
+  outline-offset: 3px;
 }
      }    
 
@@ -246,6 +254,10 @@ footer{
         &:hover{
      background-color: $color-purple-dark;
      cursor: pointer;
+}
+&:focus-visible {
+  outline: 2px solid $color-purple-dark;
+  outline-offset: 3px;
 }
         span{
             color: $color-slate-600;

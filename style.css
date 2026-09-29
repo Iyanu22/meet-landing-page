@@ -77,6 +77,10 @@ body {
   background-color: #3d7786;
   cursor: pointer;
 }
+.container .hero-section .group-chat .download:focus-visible {
+  outline: 2px solid #3d7786;
+  outline-offset: 3px;
+}
 .container .hero-section .group-chat .download span {
   color: #8FE3F9;
 }
@@ -96,6 +100,10 @@ body {
 .container .hero-section .group-chat .question:hover {
   background-color: #6b4893;
   cursor: pointer;
+}
+.container .hero-section .group-chat .question:focus-visible {
+  outline: 2px solid #6b4893;
+  outline-offset: 3px;
 }
 .container .section-one, .container footer {
   display: flex;
@@ -217,6 +225,10 @@ footer .footer-download {
 footer .footer-download:hover {
   background-color: #6b4893;
   cursor: pointer;
+}
+footer .footer-download:focus-visible {
+  outline: 2px solid #6b4893;
+  outline-offset: 3px;
 }
 footer .footer-download span {
   color: #87879D;
